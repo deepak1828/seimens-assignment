@@ -4,7 +4,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Install dependencies
 Run `npm install` in root directory
-Also run `npm install` under seimens/assignment/server directory
+Also run `npm install` under seimens-assignment/server directory
+
+## Run JSON server
+Run `json-server --watch db.json` under seimens-assignment/server directory to start JSON server
 
 ## Development server
 
