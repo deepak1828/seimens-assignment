@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "deepak",
+      "email": "deepak@gmail.com",
+      "address": {
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560001"
+      }
+    },
+    {
+      "username": "naveen",
+      "email": "naveen@gmail.com",
+      "address": {
+        "city": "Mysore",
+        "state": "Karnataka",
+        "pincode": "560001"
+      },
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<div class="row mt-5">
+    <div class="col-6">
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+            <div class="mb-3">
+                <label for="username" class="form-label">User Name: </label>
+                <input id="username" class="form-control" type="text" formControlName="username" (change)="getUserDetails()">
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Email: </label>
+                <input id="email" class="form-control" type="email" formControlName="email">
+            </div>
+    
+            <div class="mb-3">
+                <div formGroupName="address">
+                    <h4>Address</h4>
+                  
+                    <div class="mb-3">
+                        <label for="city" class="form-label">City: </label>
+                        <input id="city" class="form-control" name="city" type="text" formControlName="city" required>
+                    </div>
+                  
+                    <div class="mb-3">
+                        <label for="state" class="form-label">State: </label>
+                        <input id="state" class="form-control" type="text" formControlName="state" required>
+                    </div>
+                  
+                    <div class="mb-3">
+                        <label for="pincode" class="form-label">Zip Code: </label>
+                        <input id="pincode" class="form-control" type="number" formControlName="pincode" required>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mb-3 register-btn">
+                <button type="submit" class="btn btn-primary" [disabled]="!registerForm.valid">Register User</button>
+            </div>
+        </form>
+    </div>
+</div>
